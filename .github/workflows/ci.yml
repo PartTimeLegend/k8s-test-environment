@@ -24,7 +24,7 @@ jobs:
 
     steps:
       - name: Clone repo
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - name: Run tfsec
         uses: tfsec/tfsec-sarif-action@9a83b5c3524f825c020e356335855741fd02745f
@@ -40,7 +40,7 @@ jobs:
     # Scan runs on ubuntu, mac and windows
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
     # Instructions
     # 1. Setup JDK, Node.js, Python etc depending on your project type
     # 2. Compile or build the project before invoking scan
@@ -79,7 +79,7 @@ jobs:
     steps:
     # Checkout the repository to the GitHub Actions runner
     - name: Checkout
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
 
     # Install the latest version of Terraform CLI and configure the Terraform CLI configuration file with a Terraform Cloud user API token
     - name: Setup Terraform
